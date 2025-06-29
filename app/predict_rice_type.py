@@ -6,8 +6,8 @@ from PIL import Image
 import base64
 import os
 
-# Load the trained model
-model = tf.keras.models.load_model("saved_model/rice_type_model.h5")
+# ✅ Load the trained model with corrected path
+model = tf.keras.models.load_model("app/rice_classifier_model.h5")
 
 # Class names
 class_names = ['Arborio', 'Basmati', 'Ipsala', 'Jasmine', 'Karacadag']
